@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="978.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.HorariosController">
+   <children>
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horarios">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="visibility: #FFFFF0;">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horario Inicio" />
+      <Text layoutX="383.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horario Salida" />
+      <TableView fx:id="tblHorarios" layoutX="38.0" layoutY="255.0" prefHeight="200.0" prefWidth="902.0">
+        <columns>
+          <TableColumn fx:id="colCodigoHorario" prefWidth="130.0" text="Codigo Horario" />
+          <TableColumn fx:id="colHorarioInicio" prefWidth="149.0" text="Horario Inicio" />
+            <TableColumn fx:id="colHorarioSalida" prefWidth="130.0" text="Horario Salida" />
+            <TableColumn fx:id="colLunes" prefWidth="74.0" text="Lunes" />
+            <TableColumn fx:id="colMartes" prefWidth="87.0" text="Martes" />
+            <TableColumn fx:id="colMiercoles" prefWidth="125.0" text="Miercoles" />
+            <TableColumn fx:id="colJueves" minWidth="0.0" prefWidth="93.0" text="Jueves" />
+            <TableColumn fx:id="colViernes" prefWidth="113.0" text="Viernes" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="86.0" layoutY="472.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="184.0" layoutY="472.0" mnemonicParsing="false" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="718.0" layoutY="472.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="825.0" layoutY="472.0" mnemonicParsing="false" text="Reporte" />
+      <Label layoutX="383.0" layoutY="80.0" />
+      <TextField fx:id="txtHorarioSalida" layoutX="492.0" layoutY="136.0" />
+      <TextField fx:id="txtHorarioInicio" layoutX="116.0" layoutY="136.0" />
+      <CheckBox fx:id="cbLunes" layoutX="40.0" layoutY="198.0" mnemonicParsing="false" text="Lunes" />
+      <CheckBox fx:id="cbMartes" layoutX="138.0" layoutY="198.0" mnemonicParsing="false" text="Martes" />
+      <CheckBox fx:id="cbMiercoles" layoutX="239.0" layoutY="198.0" mnemonicParsing="false" text="Miercoles" />
+      <CheckBox fx:id="cbJueves" layoutX="344.0" layoutY="198.0" mnemonicParsing="false" text="Jueves" />
+      <CheckBox fx:id="cbViernes" layoutX="446.0" layoutY="198.0" mnemonicParsing="false" text="Viernes" />
+   </children>
+</AnchorPane>

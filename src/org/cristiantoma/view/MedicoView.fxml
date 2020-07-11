@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1227.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.MedicoController">
+   <children>
+      <TextField fx:id="txtNombres" layoutX="138.0" layoutY="227.0" prefHeight="31.0" prefWidth="386.0" />
+      <ComboBox fx:id="cmbCodigoMedico" layoutX="138.0" layoutY="144.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="txtLicencia" layoutX="138.0" layoutY="186.0" prefHeight="31.0" prefWidth="184.0" />
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicos">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Medico">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Licencia" />
+      <Text layoutX="23.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres" />
+      <TextField fx:id="txtApellidos" layoutX="138.0" layoutY="274.0" prefHeight="31.0" prefWidth="386.0" />
+      <Text layoutX="23.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" />
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="visibility: #FFFFF0;">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="23.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora Entrada:" />
+      <Text layoutX="284.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora Salida:" />
+      <TableView fx:id="tblMedicos" layoutX="43.0" layoutY="414.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="1143.0">
+        <columns>
+          <TableColumn fx:id="colCodigoMedico" prefWidth="130.0" text="Codigo Medico" />
+          <TableColumn fx:id="colLicenciaMedica" prefWidth="149.0" text="Licencia Medica" />
+            <TableColumn fx:id="colNombres" prefWidth="162.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="204.0" text="Apellidos" />
+            <TableColumn fx:id="colHoraEntrada" minWidth="0.0" prefWidth="139.0" text="Hora Entrada" />
+            <TableColumn fx:id="colHoraSalida" prefWidth="118.0" text="Hora Salida" />
+            <TableColumn fx:id="colTurnoMaximo" prefWidth="124.0" text="Turno Maximo" />
+            <TableColumn fx:id="colSexo" prefWidth="116.0" text="Sexo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="58.0" layoutY="637.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="59.0" prefWidth="117.0" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="895.0" layoutY="638.0" mnemonicParsing="false" onAction="#editar" prefHeight="59.0" prefWidth="117.0" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="220.0" layoutY="638.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="59.0" prefWidth="117.0" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="1055.0" layoutY="636.0" mnemonicParsing="false" onAction="#reporte" prefHeight="59.0" prefWidth="111.0" text="Reporte" />
+      <Text layoutX="594.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turno Maximo:" />
+      <Label layoutX="662.0" layoutY="286.0" text="Sexo:" />
+      <TextField fx:id="txtSexo" layoutX="703.0" layoutY="281.0" prefHeight="31.0" prefWidth="143.0" />
+      <TextField fx:id="txtTurnoMaximo" layoutX="703.0" layoutY="365.0" prefHeight="31.0" prefWidth="143.0" />
+      <TextField fx:id="txtHoraSalida" layoutX="378.0" layoutY="358.0" prefHeight="31.0" prefWidth="143.0" />
+      <TextField fx:id="txtHoraEntrada" layoutX="125.0" layoutY="358.0" prefHeight="31.0" prefWidth="143.0" />
+   </children>
+</AnchorPane>

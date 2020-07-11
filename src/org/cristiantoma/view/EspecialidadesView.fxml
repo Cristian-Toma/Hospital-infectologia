@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="501.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.EspecialidadesController">
+   <children>
+      <ComboBox fx:id="cmbCodigoEspecialidad" layoutX="175.0" layoutY="149.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="txtNombreEspecialidad" layoutX="175.0" layoutY="191.0" prefHeight="31.0" prefWidth="184.0" />
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Especialidades">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre especialidad" />
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="visibility: #FFFFF0;">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblEspecialidades" layoutX="35.0" layoutY="230.0" onKeyReleased="#seleccionarDatos" onMouseClicked="#seleccionarDatos" prefHeight="200.0" prefWidth="435.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEspecialidad" prefWidth="212.0" text="Codigo especialidad" />
+          <TableColumn fx:id="colNombreEspecialidad" prefWidth="222.0" text="Nombre especialidad" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="74.0" layoutY="453.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="172.0" layoutY="453.0" mnemonicParsing="false" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="269.0" layoutY="453.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="362.0" layoutY="453.0" mnemonicParsing="false" onAction="#reporte" text="Reporte" />
+      <Label layoutX="21.0" layoutY="149.0" text="Codigo especialidad" />
+   </children>
+</AnchorPane>

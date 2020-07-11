@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="689.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.MedicoEspecialidadController">
+   <children>
+      <ComboBox fx:id="cmbCodigoMedicoEspecialidad" layoutX="229.0" layoutY="139.0" prefHeight="31.0" prefWidth="111.0" />
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medico Especialidad">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Medico Especialidad">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="visibility: #FFFFF0;">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="22.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Especialidad" />
+      <Text layoutX="362.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Horario" />
+      <TableView fx:id="tblMedicoEsecialidades" layoutX="42.0" layoutY="271.0" prefHeight="200.0" prefWidth="605.0">
+        <columns>
+          <TableColumn fx:id="colCodigoMedicoEspecialidad" prefWidth="234.0" text="Codigo Medico Especialidad" />
+          <TableColumn fx:id="colCodigoEspecialidad" prefWidth="193.0" text="Codigo Especialidad" />
+            <TableColumn fx:id="colCodigoHorario" prefWidth="177.0" text="Codigo Horario" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="51.0" layoutY="488.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="149.0" layoutY="488.0" mnemonicParsing="false" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="458.0" layoutY="488.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="565.0" layoutY="488.0" mnemonicParsing="false" onAction="#reporte" text="Reporte" />
+      <Label layoutX="383.0" layoutY="80.0" />
+      <ComboBox fx:id="cmbCodigoHorario" layoutX="466.0" layoutY="210.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbCodigoEspecialidad" layoutX="164.0" layoutY="210.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

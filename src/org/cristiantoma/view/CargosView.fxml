@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="528.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.CargosController">
+   <children>
+      <ComboBox fx:id="cmbCodigoCargo" layoutX="138.0" layoutY="144.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="txtNombreCargo" layoutX="138.0" layoutY="186.0" prefHeight="31.0" prefWidth="184.0" />
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargos">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre cargo" />
+      <TableView fx:id="tblCargos" layoutX="39.0" layoutY="258.0" prefHeight="200.0" prefWidth="435.0">
+        <columns>
+          <TableColumn fx:id="colCodigoCargo" prefWidth="208.0" text="Codigo cargo" />
+            <TableColumn fx:id="colNombreCargo" prefWidth="226.0" text="Nombre cargo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="58.0" layoutY="480.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="156.0" layoutY="480.0" mnemonicParsing="false" onAction="#editar" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="282.0" layoutY="480.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="389.0" layoutY="480.0" mnemonicParsing="false" onAction="#reporte" text="Reporte" />
+      <Label layoutX="22.0" layoutY="149.0" text="Codigo Cargos" />
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

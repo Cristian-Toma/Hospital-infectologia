@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="511.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.AreasController">
+   <children>
+      <ComboBox fx:id="cmbCodigoArea" layoutX="138.0" layoutY="144.0" prefHeight="31.0" prefWidth="111.0" />
+      <TextField fx:id="txtNombreArea" layoutX="138.0" layoutY="186.0" prefHeight="31.0" prefWidth="184.0" />
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Areas">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre area" />
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="visibility: #FFFFF0;">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblAreas" layoutX="31.0" layoutY="260.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="colCodigoArea" prefWidth="220.0" text="Codigo area" />
+          <TableColumn fx:id="colNombreArea" prefWidth="225.0" text="Nombre area" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="37.0" layoutY="482.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="155.0" layoutY="482.0" mnemonicParsing="false" onAction="#editar" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="270.0" layoutY="482.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="407.0" layoutY="482.0" mnemonicParsing="false" onAction="#reporte" text="Reporte" />
+      <Label layoutX="26.0" layoutY="149.0" text="Código area" />
+   </children>
+</AnchorPane>

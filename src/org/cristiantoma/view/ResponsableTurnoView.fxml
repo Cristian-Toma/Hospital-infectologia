@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="1112.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.ResponsableTurnoController">
+   <children>
+      <ComboBox fx:id="cmbCodigoResponsableTurno" layoutX="223.0" layoutY="139.0" prefHeight="31.0" prefWidth="111.0" />
+      <Text layoutX="23.0" layoutY="105.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsable Turno">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Responsable Turno">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="31.0" fitWidth="61.0" layoutY="1.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="visibility: #FFFFF0;">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="382.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Responsable" />
+      <Text layoutX="23.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos Responsable" />
+      <TableView fx:id="tblResponsableTurno" layoutX="45.0" layoutY="262.0" prefHeight="200.0" prefWidth="1023.0">
+        <columns>
+          <TableColumn fx:id="colCodigoResponsableTurno" prefWidth="209.0" text="Codigo Responsable turno" />
+          <TableColumn fx:id="colNombreResponsable" prefWidth="193.0" text="Nombres Responsable" />
+            <TableColumn fx:id="colApellidosResponsable" prefWidth="183.0" text="Apellidos Responsable" />
+            <TableColumn fx:id="colTelefonoPersonal" prefWidth="172.0" text="Telefono Personal" />
+            <TableColumn fx:id="colCodigoArea" prefWidth="126.0" text="Codigo Area" />
+            <TableColumn fx:id="colCodigioCargo" prefWidth="139.0" text="Codigo Cargo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="64.0" layoutY="480.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="162.0" layoutY="480.0" mnemonicParsing="false" onAction="#editar" text="Editar " />
+      <Button fx:id="btnEliminar" layoutX="878.0" layoutY="480.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="985.0" layoutY="480.0" mnemonicParsing="false" onAction="#reporte" text="Reporte" />
+      <Label layoutX="383.0" layoutY="80.0" />
+      <TextField fx:id="txtNombreResponsable" layoutX="538.0" layoutY="209.0" />
+      <TextField fx:id="txtApellidosResponsable" layoutX="185.0" layoutY="209.0" />
+      <Label layoutX="362.0" layoutY="144.0" text="Codigo Area" />
+      <ComboBox fx:id="cmbCodigoArea" layoutX="452.0" layoutY="139.0" prefWidth="150.0" />
+      <Label layoutX="634.0" layoutY="144.0" text="Codigo Cargo" />
+      <ComboBox fx:id="cmbCodigoCargo" layoutX="738.0" layoutY="139.0" prefWidth="150.0" />
+      <Label layoutX="744.0" layoutY="213.0" text="Telefono Personal" />
+      <TextField fx:id="txtTelefonoPersonal" layoutX="871.0" layoutY="209.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="682.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristiantoma.control.TelefonoMedicoController">
+   <children>
+      <Text layoutX="14.0" layoutY="68.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono Medicos">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="20.0" layoutY="104.0" text="Codigo Telefono Medico" />
+      <Label layoutX="20.0" layoutY="146.0" text="Telefono Personal" />
+      <Label layoutX="20.0" layoutY="186.0" text="Telefono Trabajo" />
+      <Label layoutX="20.0" layoutY="233.0" text="Codigo Medico" />
+      <TextField fx:id="txtCodigoTelefonoMedico" layoutX="196.0" layoutY="94.0" />
+      <TextField fx:id="txtTelefonoPersonal" layoutX="196.0" layoutY="136.0" />
+      <TextField fx:id="txtTelefonoTrabajo" layoutX="196.0" layoutY="176.0" />
+      <ComboBox fx:id="cmbCodigoMedico" layoutX="196.0" layoutY="218.0" prefWidth="150.0" />
+      <TableView fx:id="tblTelefonosMedicos" layoutX="24.0" layoutY="278.0" onKeyReleased="#seleccionarDatos" onMouseClicked="#seleccionarDatos" prefHeight="200.0" prefWidth="626.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTelefonoMedico" prefWidth="189.0" text="Codigo Telefono Medico" />
+          <TableColumn fx:id="colTelefonoPersonal" minWidth="0.0" prefWidth="152.0" text="Telefono Personal" />
+            <TableColumn fx:id="colTelefonoTrabajo" prefWidth="152.0" text="Telefono Trabajo" />
+            <TableColumn fx:id="colCodigoMedico" prefWidth="134.0" text="Codigo Medico" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="35.0" layoutY="497.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="119.0" layoutY="497.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+      <Button fx:id="btnEliminar" layoutX="473.0" layoutY="497.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="568.0" layoutY="497.0" mnemonicParsing="false" text="Reporte" />
+      <ImageView fitHeight="31.0" fitWidth="64.0" layoutX="3.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sin%20título.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
